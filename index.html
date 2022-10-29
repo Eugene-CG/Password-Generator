@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Password Generator</title>
+    <link
+      rel="icon"
+      href="./img/icon-password-title.png"
+      type="image/icon type"
+    />
+    <link
+      rel="stylesheet"
+      href="./style.css"
+    />
+    <script
+      src="./index.js"
+      defer
+    ></script>
+  </head>
+  <body class="page">
+    <div class="wrapper">
+      <div class="app-window wrapper__app-window">
+        <h1 class="app-title">Password Generator</h1>
+        <div class="user-pass app-window__user-pass">
+          <span class="user-pass__text">asdfasd</span>
+          <img
+            src="./img/icon-clone-user-pass-32px.png"
+            alt="copy-button"
+            class="user-pass__btn"
+          />
+        </div>
+        <form
+          action="#"
+          class="form"
+        >
+          <span class="length__insc"
+            >Length: <span class="length__num">16</span>
+          </span>
+          <div class="length form__length">
+            <input
+              type="range"
+              class="range"
+              name="range"
+              min="4"
+              max="32"
+              step="4"
+            />
+          </div>
+          <label for=""> </label>
+          <div class="settings">
+            <span class="settings__words">Settings</span>
+            <div class="inputs settings__inputs">
+              <label
+                for="uppercase"
+                class="uppercase-label inputs__label"
+              >
+                <span class="uppercase-text">Include Uppercase</span>
+                <input
+                  type="checkbox"
+                  id="uppercase"
+                  class="uppercase-input"
+                  name="uppercase"
+                  checked
+                />
+              </label>
+              <label
+                for="lowercase"
+                class="lowercase-label inputs__label"
+              >
+                <span class="lowercase-text">Include Lowercase</span>
+                <input
+                  type="checkbox"
+                  id="lowercase"
+                  class="lowercase-input"
+                  name="lowercase"
+                  checked
+                />
+              </label>
+              <label
+                for="numbers"
+                class="numbers-label inputs__label"
+              >
+                <span class="numbers-text">Include Numbers</span>
+                <input
+                  type="checkbox"
+                  id="numbers"
+                  class="numbers-input"
+                  name="numbers"
+                  checked
+                />
+              </label>
+              <label
+                for="symbols"
+                class="symbols-label inputs__label"
+              >
+                <span class="symbols-text">Include Symbols</span>
+                <input
+                  type="checkbox"
+                  id="symbols"
+                  class="symbols-input"
+                  name="symbols"
+                  checked
+                />
+              </label>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn"
+          >
+            Generate Password
+          </button>
+        </form>
+      </div>
+    </div>
+    <canvas class="background"></canvas>
+    <script src="./background/particles.js-master/dist/particles.min.js"></script>
+  </body>
+</html>
